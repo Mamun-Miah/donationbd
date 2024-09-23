@@ -2,12 +2,19 @@
 document.getElementById('history-btn').addEventListener('click', function () {
     document.getElementById('history').classList.remove('hidden');
     document.getElementById('donation').classList.add('hidden');
-
+    document.getElementById('history-btn').classList.remove('btn-outline');
+    document.getElementById('history-btn').classList.add('btn-accent');
+    document.getElementById('donation-btn').classList.remove('btn-accent');
+    document.getElementById('donation-btn').classList.add('btn-outline');
 });
 // donation-on
 document.getElementById('donation-btn').addEventListener('click', function () {
     document.getElementById('history').classList.add('hidden');
     document.getElementById('donation').classList.remove('hidden');
+    document.getElementById('history-btn').classList.add('btn-outline');
+    document.getElementById('history-btn').classList.remove('btn-accent');
+    document.getElementById('donation-btn').classList.add('btn-accent');
+    document.getElementById('donation-btn').classList.remove('btn-outline');
 
 });
 
