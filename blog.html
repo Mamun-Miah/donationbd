@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="sticky top-0 bg-base-200">
+
+        <nav class=" bg-slate-200 py-3 sticky top-0">
+
+            <div class="flex justify-between p-3 mx-5 max-sm:mx-1">
+                <div>
+                    <button class="btn btn-accent"><a href="./blog.html">Blog</a></button>
+                </div>
+                <div class="flex max-sm:flex-col items-center">
+                    <img src="./assets/logo.png" alt="" class="h-8 pe-2">
+                    <p><a href="./index.html">Donate Bangladesh</a></p>
+                </div>
+                <div class="flex items-center">
+                    <img src="./assets/coin.png" alt="" class="pe-2">
+                    <p>5000</p>
+                    <p> &nbsp;BDT</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- faq -->
+    <section class="mt-5 w-[80%] m-auto " id="faq">
+        <div class="collapse collapse-arrow bg-base-200 mb-2">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium"> a. What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>Ans: Document Object Model</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium"> b. How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>1. document.getElementById('id'): Selects an element by its id</p>
+                <p>2. document.querySelector('selector'): Selects the first element that matches a CSS selector.</p>
+                <p>3 .document.querySelectorAll('selector'): Selects all elements matching a CSS selector.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium"> c. What is event delegation in the context of the DOM, and
+                why is it useful?</div>
+            <div class="collapse-content">
+                <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element to handle events for its child elements.Reduces the number of event listeners by using one for many child elements.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium"> d. How do you manipulate an element's attributes and styles
+                using the DOM?</div>
+            <div class="collapse-content">
+                <p>
+                    We can manipulate an element's attributes and styles in the DOM using:
+                    
+                    Attributes:
+                    setAttribute(name, value): Sets or updates an attribute.
+                    getAttribute(name): Retrieves an attribute's value.
+                    removeAttribute(name): Removes an attribute.</p>
+            </div>
+        </div>
+    </section>
+    <!-- faq -->
+
+
+
+
+
+
+
+    <footer>
+        <div class="p-12"></div>
+    </footer>
+
+
+</body>
+<script>document.getElementById('history-btn').addEventListener('click', function () {
+    document.getElementById('history').classList.remove('hidden');
+    document.getElementById('donation').classList.add('hidden');
+    document.getElementById('faq').classList.add('hidden');
+
+});
+document.getElementById('donation-btn').addEventListener('click', function () {
+    document.getElementById('history').classList.add('hidden');
+    document.getElementById('donation').classList.remove('hidden');
+    document.getElementById('faq').classList.add('hidden');
+
+});</script>
+</html>
