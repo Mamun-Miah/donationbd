@@ -135,6 +135,7 @@ function calCaulation(donationBtnName, donationAmountValue, placeDonationAmount,
         document.getElementById('popup').classList.remove('hidden');
 
     } else {
+        donationInputField.value = '';
         alert('Please Input a Valid Amount & Write Amount Below Balance');
     }
 }
